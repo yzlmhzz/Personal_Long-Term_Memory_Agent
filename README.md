@@ -1,4 +1,4 @@
-# Personal_Long-Term_Memory_Agent (多模态智能-NJU-IS-25秋课程项目)
+# Personal_Long-Term_Memory_Agent (MI-NJU-IS-25)
 
 ```shell
 conda activate dicow_v3
