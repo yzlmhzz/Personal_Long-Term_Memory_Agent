@@ -1,0 +1,64 @@
+gemini api token
+AIzaSyATTthVkukT8lws9diwHBjo1_9dBhR8SIo
+
+阿里云百炼api token
+sk-024f2cb920ca4305ba876210003d8d03
+
+gpt api token
+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
+
+huggingface token
+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
+
+ssh -f -N -R 11088:127.0.0.1:7897 caixinyue@114.212.170.115 -p 10134
+ssh -f -N -R 11080:127.0.0.1:7897 cxy@114.212.170.115 -p -10126
+os.environ["http_proxy"] = "http://127.0.0.1:11080"
+os.environ["https_proxy"] = "http://127.0.0.1:11080"
+export http_proxy=http://127.0.0.1:11080
+export https_proxy=http://127.0.0.1:11080
+
+清华源
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+export HF_ENDPOINT=https://hf-cdn.sufy.com
+GIT_LFS_SKIP_SMUDGE=1 git clone
+git lfs pull
+
+export PATH=/home/caixinyue/ffmpeg-7.0.2-amd64-static:$PATH
+export PATH=/home/caixinyue/sox-14.4.2/src/.libs:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/caixinyue/sox-14.4.2/src/.libs
+source ~/.bashrc
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "4"
+
+python -m torch.distributed.run
+
+
+bash scripts/test.sh --interval 0.1 --run_name eval --dataset /home/caixinyue/video-SALMONN-2/video_SALMONN2_plus/scripts/example.json --max_frames 768 --max_pixels 61250 --model /data1/caixinyue/models/Qwen2.5-VL-7B-Instruct-Audio --model_base /data1/caixinyue/models/Qwen2.5-VL-7B-Instruct-Audio --lora_ckpt /data1/caixinyue/models/video-SALMONN-2_plus_7B
+
+scp "E:/浏览器/model.zip"caixinyue@114.212.170.115:/data1/caixinyue/models/models--BUT-FIT--DiCoW_v2/snapshots/859796d976fb181b877e5cb32bbe0f4f771e3a9
+
+rsync -avz --progress E:/model.zip caixinyue@114.212.170.115:/data1/caixinyue/models/models--BUT-FIT--DiCoW_v2/snapshots/859796d976fb181b877e5cb32bbe0f4f771e3a9
+
+du -sh /home/caixinyue/* 2>/dev/null | sort -h
+
+pip install ninja
+MAX_JOBS=64 pip install -v flash-attn==2.7.4.post1 --no-build-isolation -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+CUDA_VISIBLE_DEVICES=4 torchrun --nproc_per_node=1 your_script.py
+
+
+google api oauth验证
+google-api-python-client==1.7.2
+google-auth==1.8.0
+google-auth-httplib2==0.0.3
+google-auth-oauthlib==0.4.1
+
+
+目标是在视频播放过程中构建出尽可能全面且准确的描述。
+
+
+
+过滤case
+https://www.youtube.com/watch?v=j-kFb6sTIEY
