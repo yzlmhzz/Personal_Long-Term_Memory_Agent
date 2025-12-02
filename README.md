@@ -1,4 +1,4 @@
-# Personal_Long-Term_Memory_Agent (MI-NJU-IS-25)
+# Personal Long-Term Memory Agent (MI-NJU-IS-25)
 
 ```shell
 conda activate dicow_v3
